@@ -6,6 +6,9 @@ namespace IGMB_103dap
 {
     class Investeringskonto : Konto
     {
+        public Investeringskonto(double startsaldo)
+        {
 
+        }
     }
 }
