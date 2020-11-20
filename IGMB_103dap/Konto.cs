@@ -21,7 +21,7 @@ namespace IGMB_103dap
         /// En egenskab der indeholder den aktuelle saldo.
         /// Dvs. havd der til enhvertid står på kontoen.
         /// </summary>
-        public double saldo { get; private set; }
+        public double saldo { get; protected set; }
 
         /// <summary>
         /// Indsætter et beløb og opdaterer saldo tilsvarende.
@@ -34,11 +34,11 @@ namespace IGMB_103dap
         }
 
         /// <summary>
-        /// Hæver et et beløb, og opdaterer daldo
-        /// kan kun hæve positive beløb, større edn nul
+        /// Hæver et et beløb, og opdaterer saldo
+        /// kan kun hæve positive beløb, større end nul
         /// </summary>
         /// <param name="beløb">positivt tal større end 0</param>
-        public void Hæv(double beløb)
+        public virtual void Hæv(double beløb)
         {
             if (saldo >= beløb)
             {
