@@ -17,14 +17,27 @@ namespace IGMB_103dap
             saldo = startSaldo;
         }
 
+        /// <summary>
+        /// En egenskab der indeholder den aktuelle saldo.
+        /// Dvs. havd der til enhvertid står på kontoen.
+        /// </summary>
         public double saldo { get; protected set; }
 
-
+        /// <summary>
+        /// Indsætter et beløb og opdaterer saldo tilsvarende.
+        /// Bør kun kunne indsætte postive beløb, større end nul.
+        /// </summary>
+        /// <param name="beløb">Postivt tal, større end nul</param>
         public void Indsæt(double beløb)
         {
             this.saldo += beløb;
         }
 
+        /// <summary>
+        /// Hæver et et beløb, og opdaterer saldo
+        /// kan kun hæve positive beløb, større end nul
+        /// </summary>
+        /// <param name="beløb">positivt tal større end 0</param>
         public virtual void Hæv(double beløb)
         {
             if (saldo >= beløb)
