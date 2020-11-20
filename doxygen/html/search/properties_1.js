@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['saldo_82',['saldo',['../class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799',1,'IGMB_103dap::Konto']]]
+  ['kredit_108',['Kredit',['../class_i_g_m_b__103dap_1_1_kasse_kredit.html#a93229c8ea574ad026427c8bd4e7b490c',1,'IGMB_103dap::KasseKredit']]]
 ];

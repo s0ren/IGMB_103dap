@@ -11,7 +11,7 @@ namespace IGMB_103dap
         /// <summary>
         /// Kundens kassekredit
         /// </summary>
-        public double kasseKredit { get; private set; }
+        public double Kredit { get; private set; }
 
         /// <summary>
         /// Opretter en kasse kredit konto
@@ -21,21 +21,21 @@ namespace IGMB_103dap
         public KasseKredit(double startSaldo, double kasseKreditStart) : base(startSaldo)
         {
 
-            kasseKredit = 0 - kasseKreditStart;
+            Kredit = 0 - kasseKreditStart;
         }
 
         /// <summary>
         /// Tillader kunden at hæve op til deres kassekredit.
         /// </summary>
-        /// <param name="beløb">beløb kunden ønsker at hæve</param>
-        public override void Hæv(double beløb)
+        /// <param name="beloeb">beløb kunden ønsker at hæve</param>
+        public override void Haev(double beloeb)
         {
-            if (beløb < kasseKredit)
+            if (beloeb < Kredit)
             {
                 return;
             }
 
-            saldo -= beløb;
+            Saldo -= beloeb;
         }
     }
 }

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hæv_3',['Hæv',['../class_i_g_m_b__103dap_1_1_kasse_kredit.html#a096f0e287c6878edc168cd1be09b8a79',1,'IGMB_103dap.KasseKredit.Hæv()'],['../class_i_g_m_b__103dap_1_1_konto.html#a27e1cbda2c63794023c7d553e4602429',1,'IGMB_103dap.Konto.Hæv()']]]
+  ['dispose_3',['Dispose',['../class_banken_test_1_1_kasse_kredit_test.html#a9c85370d56be6b852f51ff68b934e042',1,'BankenTest.KasseKreditTest.Dispose()'],['../class_banken_test_1_1_konto_test.html#afb2747137f9d5b5131247911425b84b8',1,'BankenTest.KontoTest.Dispose()']]]
 ];

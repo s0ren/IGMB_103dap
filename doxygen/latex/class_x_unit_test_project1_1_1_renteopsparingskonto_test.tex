@@ -1,0 +1,120 @@
+\hypertarget{class_x_unit_test_project1_1_1_renteopsparingskonto_test}{}\doxysection{X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test Klasse-\/reference}
+\label{class_x_unit_test_project1_1_1_renteopsparingskonto_test}\index{XUnitTestProject1.RenteopsparingskontoTest@{XUnitTestProject1.RenteopsparingskontoTest}}
+\doxysubsection*{Offentlige metoder}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_x_unit_test_project1_1_1_renteopsparingskonto_test_ac1dd0a6716c04275950efaa836301524}{Renteopsparingskonto\+Test}} ()
+\item 
+void \mbox{\hyperlink{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a3bf30183be18beeff8a4149d85fe1d2d}{Test\+Forrentning}} ()
+\item 
+void \mbox{\hyperlink{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a11f8c03450e14db21155a3dda4d6b541}{ForrentningÆndrer\+Ikke\+Saldo}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private attributter}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_renteopsparingskonto}{Renteopsparingskonto}} \mbox{\hyperlink{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a05ab5c5fc7fb3041f91bf99caaa9557b}{konto}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detaljeret beskrivelse}
+
+
+Defineret på linje 9 i filen Renteopsparingskonto\+Test.\+cs.
+
+
+
+\doxysubsection{Dokumentation af konstruktører og destruktører}
+\mbox{\Hypertarget{class_x_unit_test_project1_1_1_renteopsparingskonto_test_ac1dd0a6716c04275950efaa836301524}\label{class_x_unit_test_project1_1_1_renteopsparingskonto_test_ac1dd0a6716c04275950efaa836301524}} 
+\index{XUnitTestProject1.RenteopsparingskontoTest@{XUnitTestProject1.RenteopsparingskontoTest}!RenteopsparingskontoTest@{RenteopsparingskontoTest}}
+\index{RenteopsparingskontoTest@{RenteopsparingskontoTest}!XUnitTestProject1.RenteopsparingskontoTest@{XUnitTestProject1.RenteopsparingskontoTest}}
+\doxysubsubsection{\texorpdfstring{RenteopsparingskontoTest()}{RenteopsparingskontoTest()}}
+{\footnotesize\ttfamily X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+Renteopsparingskonto\+Test (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Defineret på linje 12 i filen Renteopsparingskonto\+Test.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13         \{}
+\DoxyCodeLine{14             \mbox{\hyperlink{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a05ab5c5fc7fb3041f91bf99caaa9557b}{konto}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_renteopsparingskonto}{Renteopsparingskonto}}(10000, 2);}
+\DoxyCodeLine{15         \}}
+
+\end{DoxyCode}
+
+
+Indeholder referencer til X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+konto.
+
+
+
+\doxysubsection{Dokumentation af medlemsfunktioner}
+\mbox{\Hypertarget{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a11f8c03450e14db21155a3dda4d6b541}\label{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a11f8c03450e14db21155a3dda4d6b541}} 
+\index{XUnitTestProject1.RenteopsparingskontoTest@{XUnitTestProject1.RenteopsparingskontoTest}!ForrentningÆndrerIkkeSaldo@{ForrentningÆndrerIkkeSaldo}}
+\index{ForrentningÆndrerIkkeSaldo@{ForrentningÆndrerIkkeSaldo}!XUnitTestProject1.RenteopsparingskontoTest@{XUnitTestProject1.RenteopsparingskontoTest}}
+\doxysubsubsection{\texorpdfstring{ForrentningÆndrerIkkeSaldo()}{ForrentningÆndrerIkkeSaldo()}}
+{\footnotesize\ttfamily void X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+ForrentningÆndrer\+Ikke\+Saldo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Defineret på linje 27 i filen Renteopsparingskonto\+Test.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28         \{}
+\DoxyCodeLine{29             var gammelSaldo = \mbox{\hyperlink{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a05ab5c5fc7fb3041f91bf99caaa9557b}{konto}}.\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a52fc5606d26ce8360ac03fe72af59092}{Saldo}};}
+\DoxyCodeLine{30             \mbox{\hyperlink{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a05ab5c5fc7fb3041f91bf99caaa9557b}{konto}}.\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_renteopsparingskonto_aa961c071f8bd3f8b3892cad04526611e}{Forrentning}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32             Assert.Equal(gammelSaldo, \mbox{\hyperlink{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a05ab5c5fc7fb3041f91bf99caaa9557b}{konto}}.\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a52fc5606d26ce8360ac03fe72af59092}{Saldo}});}
+\DoxyCodeLine{33         \}}
+
+\end{DoxyCode}
+
+
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto.\+Forrentning(), X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+konto og I\+G\+M\+B\+\_\+103dap.\+Konto.\+Saldo.
+
+\mbox{\Hypertarget{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a3bf30183be18beeff8a4149d85fe1d2d}\label{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a3bf30183be18beeff8a4149d85fe1d2d}} 
+\index{XUnitTestProject1.RenteopsparingskontoTest@{XUnitTestProject1.RenteopsparingskontoTest}!TestForrentning@{TestForrentning}}
+\index{TestForrentning@{TestForrentning}!XUnitTestProject1.RenteopsparingskontoTest@{XUnitTestProject1.RenteopsparingskontoTest}}
+\doxysubsubsection{\texorpdfstring{TestForrentning()}{TestForrentning()}}
+{\footnotesize\ttfamily void X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+Test\+Forrentning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Defineret på linje 18 i filen Renteopsparingskonto\+Test.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19         \{}
+\DoxyCodeLine{20             var expected = 10200;}
+\DoxyCodeLine{21             var actual = \mbox{\hyperlink{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a05ab5c5fc7fb3041f91bf99caaa9557b}{konto}}.\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_renteopsparingskonto_aa961c071f8bd3f8b3892cad04526611e}{Forrentning}}();}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23             Assert.Equal(expected, actual);}
+\DoxyCodeLine{24         \}}
+
+\end{DoxyCode}
+
+
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto.\+Forrentning() og X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+konto.
+
+
+
+\doxysubsection{Dokumentation af feltvariable}
+\mbox{\Hypertarget{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a05ab5c5fc7fb3041f91bf99caaa9557b}\label{class_x_unit_test_project1_1_1_renteopsparingskonto_test_a05ab5c5fc7fb3041f91bf99caaa9557b}} 
+\index{XUnitTestProject1.RenteopsparingskontoTest@{XUnitTestProject1.RenteopsparingskontoTest}!konto@{konto}}
+\index{konto@{konto}!XUnitTestProject1.RenteopsparingskontoTest@{XUnitTestProject1.RenteopsparingskontoTest}}
+\doxysubsubsection{\texorpdfstring{konto}{konto}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_renteopsparingskonto}{Renteopsparingskonto}} X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+konto\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Defineret på linje 11 i filen Renteopsparingskonto\+Test.\+cs.
+
+
+
+Refereret til af X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+ForrentningÆndrer\+Ikke\+Saldo(), X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+Renteopsparingskonto\+Test() og X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+Test\+Forrentning().
+
+
+
+Dokumentationen for denne klasse blev genereret ud fra filen\+:\begin{DoxyCompactItemize}
+\item 
+X\+Unit\+Test\+Project1/\mbox{\hyperlink{_renteopsparingskonto_test_8cs}{Renteopsparingskonto\+Test.\+cs}}\end{DoxyCompactItemize}

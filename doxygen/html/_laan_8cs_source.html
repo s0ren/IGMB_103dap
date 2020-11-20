@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Bank: Kildefilen IGMB_103dap/Laan.cs</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Bank
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Genereret af Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Søg');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Søg');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8948ec236a3a2039d52347833dc49c52.html">IGMB_103dap</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Laan.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_laan_8cs.html">Hop til denne fils dokumentation.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_i_g_m_b__103dap.html">IGMB_103dap</a></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;{</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_i_g_m_b__103dap_1_1_laan.html">    3</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_i_g_m_b__103dap_1_1_laan.html">Laan</a> : <a class="code" href="class_i_g_m_b__103dap_1_1_konto.html">Konto</a></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    {</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_i_g_m_b__103dap_1_1_laan.html#a8d82fd1eca578dd5521f9af9157d60fa">    5</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="class_i_g_m_b__103dap_1_1_laan.html#a8d82fd1eca578dd5521f9af9157d60fa">Gaeld</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="comment">// Constructor til når man laver et nyt lån.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_i_g_m_b__103dap_1_1_laan.html">Laan</a>(<span class="keywordtype">double</span> beloeb) : base(beloeb) =&gt; <a class="code" href="class_i_g_m_b__103dap_1_1_laan.html#a8d82fd1eca578dd5521f9af9157d60fa">Gaeld</a> += beloeb;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_i_g_m_b__103dap_1_1_laan.html#ac859fb296cab8206024063de8d7a532f">   15</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="class_i_g_m_b__103dap_1_1_laan.html#ac859fb296cab8206024063de8d7a532f">Afdrag</a>(<span class="keywordtype">double</span> betaling)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordtype">double</span> rest = 0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">if</span> (betaling &gt; <a class="code" href="class_i_g_m_b__103dap_1_1_laan.html#a8d82fd1eca578dd5521f9af9157d60fa">Gaeld</a>) rest = betaling - <a class="code" href="class_i_g_m_b__103dap_1_1_laan.html#a8d82fd1eca578dd5521f9af9157d60fa">Gaeld</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <a class="code" href="class_i_g_m_b__103dap_1_1_laan.html#a8d82fd1eca578dd5521f9af9157d60fa">Gaeld</a> -= betaling;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordflow">return</span> rest;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_i_g_m_b__103dap_1_1_laan.html#a6fe752d3a345b0c3c1e0cbac9c779f1c">   27</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> <a class="code" href="class_i_g_m_b__103dap_1_1_laan.html#a6fe752d3a345b0c3c1e0cbac9c779f1c">Haev</a>(<span class="keywordtype">double</span> beloeb) { }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclass_i_g_m_b__103dap_1_1_laan_html"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_laan.html">IGMB_103dap.Laan</a></div><div class="ttdef"><b>Definition:</b> <a href="_laan_8cs_source.html#l00003">Laan.cs:4</a></div></div>
+<div class="ttc" id="aclass_i_g_m_b__103dap_1_1_konto_html"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_konto.html">IGMB_103dap.Konto</a></div><div class="ttdef"><b>Definition:</b> <a href="_konto_8cs_source.html#l00009">Konto.cs:10</a></div></div>
+<div class="ttc" id="anamespace_i_g_m_b__103dap_html"><div class="ttname"><a href="namespace_i_g_m_b__103dap.html">IGMB_103dap</a></div><div class="ttdef"><b>Definition:</b> <a href="_kasse_kredit_8cs_source.html#l00007">KasseKredit.cs:8</a></div></div>
+<div class="ttc" id="aclass_i_g_m_b__103dap_1_1_laan_html_a8d82fd1eca578dd5521f9af9157d60fa"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_laan.html#a8d82fd1eca578dd5521f9af9157d60fa">IGMB_103dap.Laan.Gaeld</a></div><div class="ttdeci">double Gaeld</div><div class="ttdef"><b>Definition:</b> <a href="_laan_8cs_source.html#l00005">Laan.cs:5</a></div></div>
+<div class="ttc" id="aclass_i_g_m_b__103dap_1_1_laan_html_a6fe752d3a345b0c3c1e0cbac9c779f1c"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_laan.html#a6fe752d3a345b0c3c1e0cbac9c779f1c">IGMB_103dap.Laan.Haev</a></div><div class="ttdeci">override void Haev(double beloeb)</div><div class="ttdoc">Tom override som ikke gør noget, da man ikke kan hæve fra et lån.</div><div class="ttdef"><b>Definition:</b> <a href="_laan_8cs_source.html#l00027">Laan.cs:27</a></div></div>
+<div class="ttc" id="aclass_i_g_m_b__103dap_1_1_laan_html_ac859fb296cab8206024063de8d7a532f"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_laan.html#ac859fb296cab8206024063de8d7a532f">IGMB_103dap.Laan.Afdrag</a></div><div class="ttdeci">Laan(double beloeb) double Afdrag(double betaling)</div><div class="ttdoc">Udregning af afdrag til sin gæld.</div><div class="ttdef"><b>Definition:</b> <a href="_laan_8cs_source.html#l00015">Laan.cs:15</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Genereret af&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

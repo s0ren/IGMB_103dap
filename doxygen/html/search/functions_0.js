@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dispose_58',['Dispose',['../class_banken_test_1_1_kasse_kredit_test.html#a9c85370d56be6b852f51ff68b934e042',1,'BankenTest.KasseKreditTest.Dispose()'],['../class_banken_test_1_1_konto_test.html#afb2747137f9d5b5131247911425b84b8',1,'BankenTest.KontoTest.Dispose()']]]
+  ['afdrag_77',['Afdrag',['../class_i_g_m_b__103dap_1_1_laan.html#ac859fb296cab8206024063de8d7a532f',1,'IGMB_103dap::Laan']]]
 ];

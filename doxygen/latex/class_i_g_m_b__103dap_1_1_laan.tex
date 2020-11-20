@@ -1,0 +1,121 @@
+\hypertarget{class_i_g_m_b__103dap_1_1_laan}{}\doxysection{I\+G\+M\+B\+\_\+103dap.\+Laan Klasse-\/reference}
+\label{class_i_g_m_b__103dap_1_1_laan}\index{IGMB\_103dap.Laan@{IGMB\_103dap.Laan}}
+Stamtræ for I\+G\+M\+B\+\_\+103dap.\+Laan\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_g_m_b__103dap_1_1_laan}
+\end{center}
+\end{figure}
+\doxysubsection*{Offentlige metoder}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_laan}{Laan}}(double beloeb) double \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_laan_ac859fb296cab8206024063de8d7a532f}{Afdrag}} (double betaling)
+\begin{DoxyCompactList}\small\item\em Udregning af afdrag til sin gæld. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_laan_a6fe752d3a345b0c3c1e0cbac9c779f1c}{Haev}} (double beloeb)
+\begin{DoxyCompactList}\small\item\em Tom override som ikke gør noget, da man ikke kan hæve fra et lån. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Egenskaber}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_laan_a8d82fd1eca578dd5521f9af9157d60fa}{Gaeld}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detaljeret beskrivelse}
+
+
+Defineret på linje 3 i filen Laan.\+cs.
+
+
+
+\doxysubsection{Dokumentation af medlemsfunktioner}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_laan_ac859fb296cab8206024063de8d7a532f}\label{class_i_g_m_b__103dap_1_1_laan_ac859fb296cab8206024063de8d7a532f}} 
+\index{IGMB\_103dap.Laan@{IGMB\_103dap.Laan}!Afdrag@{Afdrag}}
+\index{Afdrag@{Afdrag}!IGMB\_103dap.Laan@{IGMB\_103dap.Laan}}
+\doxysubsubsection{\texorpdfstring{Afdrag()}{Afdrag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_laan}{Laan}} (double beloeb) double I\+G\+M\+B\+\_\+103dap.\+Laan.\+Afdrag (\begin{DoxyParamCaption}\item[{double}]{betaling }\end{DoxyParamCaption})}
+
+
+
+Udregning af afdrag til sin gæld. 
+
+
+\begin{DoxyParams}{Parametre}
+{\em betaling} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returnerer}
+Resten af sin gæld.
+\end{DoxyReturn}
+
+
+Defineret på linje 15 i filen Laan.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16         \{}
+\DoxyCodeLine{17             \textcolor{keywordtype}{double} rest = 0;}
+\DoxyCodeLine{18             \textcolor{keywordflow}{if} (betaling > \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_laan_a8d82fd1eca578dd5521f9af9157d60fa}{Gaeld}}) rest = betaling -\/ \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_laan_a8d82fd1eca578dd5521f9af9157d60fa}{Gaeld}}; }
+\DoxyCodeLine{19             \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_laan_a8d82fd1eca578dd5521f9af9157d60fa}{Gaeld}} -\/= betaling;}
+\DoxyCodeLine{20             \textcolor{keywordflow}{return} rest;}
+\DoxyCodeLine{21         \}}
+
+\end{DoxyCode}
+
+
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Laan.\+Gaeld.
+
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_laan_a6fe752d3a345b0c3c1e0cbac9c779f1c}\label{class_i_g_m_b__103dap_1_1_laan_a6fe752d3a345b0c3c1e0cbac9c779f1c}} 
+\index{IGMB\_103dap.Laan@{IGMB\_103dap.Laan}!Haev@{Haev}}
+\index{Haev@{Haev}!IGMB\_103dap.Laan@{IGMB\_103dap.Laan}}
+\doxysubsubsection{\texorpdfstring{Haev()}{Haev()}}
+{\footnotesize\ttfamily override void I\+G\+M\+B\+\_\+103dap.\+Laan.\+Haev (\begin{DoxyParamCaption}\item[{double}]{beloeb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Tom override som ikke gør noget, da man ikke kan hæve fra et lån. 
+
+
+\begin{DoxyParams}{Parametre}
+{\em beloeb} & \\
+\hline
+\end{DoxyParams}
+
+
+Overskriver metode fra \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_afacbaceb7e41b5178b0d6de17d2b54ab}{I\+G\+M\+B\+\_\+103dap.\+Konto}}.
+
+
+
+Defineret på linje 27 i filen Laan.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27 \{ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Egenskabsdokumentation}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_laan_a8d82fd1eca578dd5521f9af9157d60fa}\label{class_i_g_m_b__103dap_1_1_laan_a8d82fd1eca578dd5521f9af9157d60fa}} 
+\index{IGMB\_103dap.Laan@{IGMB\_103dap.Laan}!Gaeld@{Gaeld}}
+\index{Gaeld@{Gaeld}!IGMB\_103dap.Laan@{IGMB\_103dap.Laan}}
+\doxysubsubsection{\texorpdfstring{Gaeld}{Gaeld}}
+{\footnotesize\ttfamily double I\+G\+M\+B\+\_\+103dap.\+Laan.\+Gaeld\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Defineret på linje 5 i filen Laan.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5 \{ \textcolor{keyword}{get}; \textcolor{keyword}{private} \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+Refereret til af I\+G\+M\+B\+\_\+103dap.\+Laan.\+Afdrag().
+
+
+
+Dokumentationen for denne klasse blev genereret ud fra filen\+:\begin{DoxyCompactItemize}
+\item 
+I\+G\+M\+B\+\_\+103dap/\mbox{\hyperlink{_laan_8cs}{Laan.\+cs}}\end{DoxyCompactItemize}

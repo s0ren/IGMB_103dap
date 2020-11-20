@@ -1,0 +1,115 @@
+\hypertarget{class_i_g_m_b__103dap_1_1_renteopsparingskonto}{}\doxysection{I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto Klasse-\/reference}
+\label{class_i_g_m_b__103dap_1_1_renteopsparingskonto}\index{IGMB\_103dap.Renteopsparingskonto@{IGMB\_103dap.Renteopsparingskonto}}
+Stamtræ for I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_g_m_b__103dap_1_1_renteopsparingskonto}
+\end{center}
+\end{figure}
+\doxysubsection*{Offentlige metoder}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_renteopsparingskonto_aa3a0959ff7aa5f14ff7f21ca5a34e78a}{Renteopsparingskonto}} (double start\+Saldo, double rentesats)
+\item 
+double \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_renteopsparingskonto_aa961c071f8bd3f8b3892cad04526611e}{Forrentning}} ()
+\begin{DoxyCompactList}\small\item\em Beregner ny Saldo efter en forrentning \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Egenskaber}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_renteopsparingskonto_af4931847f539879c60c31c3e0148ae5a}{Rentesats}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detaljeret beskrivelse}
+
+
+Defineret på linje 7 i filen Renteopsparingskonto.\+cs.
+
+
+
+\doxysubsection{Dokumentation af konstruktører og destruktører}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_renteopsparingskonto_aa3a0959ff7aa5f14ff7f21ca5a34e78a}\label{class_i_g_m_b__103dap_1_1_renteopsparingskonto_aa3a0959ff7aa5f14ff7f21ca5a34e78a}} 
+\index{IGMB\_103dap.Renteopsparingskonto@{IGMB\_103dap.Renteopsparingskonto}!Renteopsparingskonto@{Renteopsparingskonto}}
+\index{Renteopsparingskonto@{Renteopsparingskonto}!IGMB\_103dap.Renteopsparingskonto@{IGMB\_103dap.Renteopsparingskonto}}
+\doxysubsubsection{\texorpdfstring{Renteopsparingskonto()}{Renteopsparingskonto()}}
+{\footnotesize\ttfamily I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto.\+Renteopsparingskonto (\begin{DoxyParamCaption}\item[{double}]{start\+Saldo,  }\item[{double}]{rentesats }\end{DoxyParamCaption})}
+
+
+
+Defineret på linje 11 i filen Renteopsparingskonto.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12             : base(startSaldo)}
+\DoxyCodeLine{13         \{}
+\DoxyCodeLine{14             \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_renteopsparingskonto_af4931847f539879c60c31c3e0148ae5a}{Rentesats}} = rentesats;}
+\DoxyCodeLine{15         \}}
+
+\end{DoxyCode}
+
+
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto.\+Rentesats.
+
+
+
+\doxysubsection{Dokumentation af medlemsfunktioner}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_renteopsparingskonto_aa961c071f8bd3f8b3892cad04526611e}\label{class_i_g_m_b__103dap_1_1_renteopsparingskonto_aa961c071f8bd3f8b3892cad04526611e}} 
+\index{IGMB\_103dap.Renteopsparingskonto@{IGMB\_103dap.Renteopsparingskonto}!Forrentning@{Forrentning}}
+\index{Forrentning@{Forrentning}!IGMB\_103dap.Renteopsparingskonto@{IGMB\_103dap.Renteopsparingskonto}}
+\doxysubsubsection{\texorpdfstring{Forrentning()}{Forrentning()}}
+{\footnotesize\ttfamily double I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto.\+Forrentning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Beregner ny Saldo efter en forrentning 
+
+\begin{DoxyReturn}{Returnerer}
+Ny Saldo
+\end{DoxyReturn}
+
+
+Defineret på linje 20 i filen Renteopsparingskonto.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21         \{}
+\DoxyCodeLine{22             var nySaldo = \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a52fc5606d26ce8360ac03fe72af59092}{Saldo}} * (1 + \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_renteopsparingskonto_af4931847f539879c60c31c3e0148ae5a}{Rentesats}} / 100);}
+\DoxyCodeLine{23             \textcolor{keywordflow}{return} nySaldo;}
+\DoxyCodeLine{24         \}}
+
+\end{DoxyCode}
+
+
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto.\+Rentesats og I\+G\+M\+B\+\_\+103dap.\+Konto.\+Saldo.
+
+
+
+Refereret til af X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+ForrentningÆndrer\+Ikke\+Saldo() og X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+Test\+Forrentning().
+
+
+
+\doxysubsection{Egenskabsdokumentation}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_renteopsparingskonto_af4931847f539879c60c31c3e0148ae5a}\label{class_i_g_m_b__103dap_1_1_renteopsparingskonto_af4931847f539879c60c31c3e0148ae5a}} 
+\index{IGMB\_103dap.Renteopsparingskonto@{IGMB\_103dap.Renteopsparingskonto}!Rentesats@{Rentesats}}
+\index{Rentesats@{Rentesats}!IGMB\_103dap.Renteopsparingskonto@{IGMB\_103dap.Renteopsparingskonto}}
+\doxysubsubsection{\texorpdfstring{Rentesats}{Rentesats}}
+{\footnotesize\ttfamily double I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto.\+Rentesats\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Defineret på linje 10 i filen Renteopsparingskonto.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+Refereret til af I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto.\+Forrentning() og I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto.\+Renteopsparingskonto().
+
+
+
+Dokumentationen for denne klasse blev genereret ud fra filen\+:\begin{DoxyCompactItemize}
+\item 
+I\+G\+M\+B\+\_\+103dap/\mbox{\hyperlink{_renteopsparingskonto_8cs}{Renteopsparingskonto.\+cs}}\end{DoxyCompactItemize}

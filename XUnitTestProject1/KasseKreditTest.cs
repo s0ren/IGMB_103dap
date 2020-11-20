@@ -23,96 +23,96 @@ namespace BankenTest
         public void TestConstructMed100kr()
         {
             k = new KasseKredit(100, _kasseKredit);
-            Assert.Equal(100, k.saldo);
+            Assert.Equal(100, k.Saldo);
         }
 
         [Fact]
         public void TestConstructMed0kr()
         {
             //Konto k = new KasseKredit(0);
-            //Assert.Equal(100, k.saldo);
-            Assert.NotEqual(100, k.saldo);
+            //Assert.Equal(100, k.Saldo);
+            Assert.NotEqual(100, k.Saldo);
         }
 
         [Fact]
-        public void TestIndsæt100kr()
+        public void TestIndsaet100kr()
         {
             //Konto k = new KasseKredit(0);
-            k.Indsæt(100);
-            Assert.Equal(100, k.saldo);
+            k.Indsaet(100);
+            Assert.Equal(100, k.Saldo);
         }
 
         [Fact]
-        public void TestIndsæt0kr()
+        public void TestIndsaet0kr()
         {
             //Konto k = new Konto(0);
-            k.Indsæt(0);
-            Assert.Equal(0, k.saldo);
+            k.Indsaet(0);
+            Assert.Equal(0, k.Saldo);
         }
 
         [Fact]
-        public void TestIndsætMinus100kr()
+        public void TestIndsaetMinus100kr()
         {
             //Konto k = new Konto(0);
-            k.Indsæt(-100);
-            Assert.Equal(-100, k.saldo);
+            k.Indsaet(-100);
+            Assert.Equal(-100, k.Saldo);
         }
 
         [Fact]
-        public void TestIndsætMegaMangeKr()
+        public void TestIndsaetMegaMangeKr()
         {
             //Konto k = new Konto(0);
-            k.Indsæt(Double.MaxValue);
-            Assert.Equal(Double.MaxValue, k.saldo);
+            k.Indsaet(Double.MaxValue);
+            Assert.Equal(Double.MaxValue, k.Saldo);
         }
 
         [Fact]
-        public void TestIndsætMegaMangeKrPåKontoMed1kr()
+        public void TestIndsaetMegaMangeKrPåKontoMed1kr()
         {
             k = new KasseKredit(1, _kasseKredit);
-            //k.Indsæt(Double.MaxValue);
-            //Assert.Equal(Double.MaxValue + 1, k.saldo);
-            Assert.ThrowsAny<Exception>(() => k.Indsæt(Double.MaxValue));
+            //k.Indsaet(Double.MaxValue);
+            //Assert.Equal(Double.MaxValue + 1, k.Saldo);
+            Assert.ThrowsAny<Exception>(() => k.Indsaet(Double.MaxValue));
         }
 
         [Fact]
-        public void TestHæv10krPåKontoMed100()
+        public void TestHaev10krPåKontoMed100()
         {
             k = new KasseKredit(100, _kasseKredit);
-            k.Hæv(10);
-            Assert.Equal(90, k.saldo);
+            k.Haev(10);
+            Assert.Equal(90, k.Saldo);
         }
 
         [Fact]
-        public void TestHæv100krPåKontoMed0()
+        public void TestHaev100krPåKontoMed0()
         {
             //Konto k = new Konto(0);
-            k.Hæv(100);
-            Assert.Equal(-100, k.saldo);
+            k.Haev(100);
+            Assert.Equal(-100, k.Saldo);
         }
 
         [Fact]
-        public void TestHæv100krPåKontoMed100()
+        public void TestHaev100krPåKontoMed100()
         {
             k = new KasseKredit(100, _kasseKredit);
-            k.Hæv(100);
-            Assert.Equal(0, k.saldo);
+            k.Haev(100);
+            Assert.Equal(0, k.Saldo);
         }
 
         [Fact]
-        public void TestHævOverKasseKreditMed0()
+        public void TestHaevOverKasseKreditMed0()
         {
             //k = new KasseKredit(0, _kasseKredit);
-            k.Hæv(5200);
-            Assert.NotEqual(-5200, k.saldo);
+            k.Haev(5200);
+            Assert.NotEqual(-5200, k.Saldo);
         }
 
         [Fact]
-        public void TestHævOverKasseKreditMed100()
+        public void TestHaevOverKasseKreditMed100()
         {
             k = new KasseKredit(100, _kasseKredit);
-            k.Hæv(5100);
-            Assert.Equal(-5000, k.saldo);
+            k.Haev(5100);
+            Assert.Equal(-5000, k.Saldo);
         }
     }
 }

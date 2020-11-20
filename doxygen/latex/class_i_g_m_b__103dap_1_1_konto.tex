@@ -3,7 +3,7 @@
 Stamtræ for I\+G\+M\+B\+\_\+103dap.\+Konto\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_i_g_m_b__103dap_1_1_konto}
+\includegraphics[height=1.637427cm]{class_i_g_m_b__103dap_1_1_konto}
 \end{center}
 \end{figure}
 \doxysubsection*{Offentlige metoder}
@@ -11,15 +11,15 @@ Stamtræ for I\+G\+M\+B\+\_\+103dap.\+Konto\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a88d6a9df787bb0ef599f892e31e03c4d}{Konto}} (double start\+Saldo)
 \begin{DoxyCompactList}\small\item\em Laver en \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto}{Konto}} med et beløb indsat \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a5545f0ea1dcb8782053029a9f46084d2}{Indsæt}} (double beløb)
-\item 
-virtual void \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a27e1cbda2c63794023c7d553e4602429}{Hæv}} (double beløb)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a8ed7fed7186a6df189eb108a5754bdaa}{Indsaet}} (double beloeb)
+\begin{DoxyCompactList}\small\item\em Indsaetter et beløb og opdaterer Saldo tilsvarende. Bør kun kunne indsætte postive beløb, større end nul. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_afacbaceb7e41b5178b0d6de17d2b54ab}{Haev}} (double beloeb)
+\begin{DoxyCompactList}\small\item\em Haever et et beløb, og opdaterer Saldo kan kun hæve positive beløb, større end nul \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Egenskaber}
 \begin{DoxyCompactItemize}
 \item 
-double \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}{saldo}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
-\end{DoxyCompactItemize}
+double \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a52fc5606d26ce8360ac03fe72af59092}{Saldo}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em En egenskab der indeholder den aktuelle Saldo. Dvs. havd der til enhvertid står på kontoen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detaljeret beskrivelse}
@@ -52,87 +52,121 @@ Defineret på linje 15 i filen Konto.\+cs.
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{16         \{}
-\DoxyCodeLine{17             \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}{saldo}} = startSaldo;}
+\DoxyCodeLine{17             \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a52fc5606d26ce8360ac03fe72af59092}{Saldo}} = startSaldo;}
 \DoxyCodeLine{18         \}}
 
 \end{DoxyCode}
 
 
-Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Konto.\+saldo.
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Konto.\+Saldo.
 
 
 
 \doxysubsection{Dokumentation af medlemsfunktioner}
-\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_konto_a27e1cbda2c63794023c7d553e4602429}\label{class_i_g_m_b__103dap_1_1_konto_a27e1cbda2c63794023c7d553e4602429}} 
-\index{IGMB\_103dap.Konto@{IGMB\_103dap.Konto}!Hæv@{Hæv}}
-\index{Hæv@{Hæv}!IGMB\_103dap.Konto@{IGMB\_103dap.Konto}}
-\doxysubsubsection{\texorpdfstring{Hæv()}{Hæv()}}
-{\footnotesize\ttfamily virtual void I\+G\+M\+B\+\_\+103dap.\+Konto.\+Hæv (\begin{DoxyParamCaption}\item[{double}]{beløb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_konto_afacbaceb7e41b5178b0d6de17d2b54ab}\label{class_i_g_m_b__103dap_1_1_konto_afacbaceb7e41b5178b0d6de17d2b54ab}} 
+\index{IGMB\_103dap.Konto@{IGMB\_103dap.Konto}!Haev@{Haev}}
+\index{Haev@{Haev}!IGMB\_103dap.Konto@{IGMB\_103dap.Konto}}
+\doxysubsubsection{\texorpdfstring{Haev()}{Haev()}}
+{\footnotesize\ttfamily virtual void I\+G\+M\+B\+\_\+103dap.\+Konto.\+Haev (\begin{DoxyParamCaption}\item[{double}]{beloeb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Reimplementeret i \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_kasse_kredit_a096f0e287c6878edc168cd1be09b8a79}{I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit}}.
+Haever et et beløb, og opdaterer Saldo kan kun hæve positive beløb, større end nul 
+
+
+\begin{DoxyParams}{Parametre}
+{\em beløb} & positivt tal større end 0\\
+\hline
+\end{DoxyParams}
+
+
+Reimplementeret i \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_laan_a6fe752d3a345b0c3c1e0cbac9c779f1c}{I\+G\+M\+B\+\_\+103dap.\+Laan}} og \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_kasse_kredit_a00e313c66a04234b644682cbc1db7393}{I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit}}.
 
 
 
-Defineret på linje 28 i filen Konto.\+cs.
+Defineret på linje 53 i filen Konto.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{29         \{}
-\DoxyCodeLine{30             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}{saldo}} >= beløb)}
-\DoxyCodeLine{31             \{}
-\DoxyCodeLine{32                 \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}{saldo}} -\/= beløb;}
-\DoxyCodeLine{33             \}}
-\DoxyCodeLine{34         \}}
+\DoxyCodeLine{54         \{}
+\DoxyCodeLine{55             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a52fc5606d26ce8360ac03fe72af59092}{Saldo}} >= beloeb)}
+\DoxyCodeLine{56             \{}
+\DoxyCodeLine{57                 \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a52fc5606d26ce8360ac03fe72af59092}{Saldo}} -\/= beloeb;}
+\DoxyCodeLine{58             \}}
+\DoxyCodeLine{59         \}}
 
 \end{DoxyCode}
 
 
-Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Konto.\+saldo.
-
-\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_konto_a5545f0ea1dcb8782053029a9f46084d2}\label{class_i_g_m_b__103dap_1_1_konto_a5545f0ea1dcb8782053029a9f46084d2}} 
-\index{IGMB\_103dap.Konto@{IGMB\_103dap.Konto}!Indsæt@{Indsæt}}
-\index{Indsæt@{Indsæt}!IGMB\_103dap.Konto@{IGMB\_103dap.Konto}}
-\doxysubsubsection{\texorpdfstring{Indsæt()}{Indsæt()}}
-{\footnotesize\ttfamily void I\+G\+M\+B\+\_\+103dap.\+Konto.\+Indsæt (\begin{DoxyParamCaption}\item[{double}]{beløb }\end{DoxyParamCaption})}
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Konto.\+Saldo.
 
 
 
-Defineret på linje 23 i filen Konto.\+cs.
+Refereret til af Banken\+Test.\+Konto\+Test.\+Test\+Haev100kr\+P�\+Konto\+Med0(), Banken\+Test.\+Konto\+Test.\+Test\+Haev100kr\+P�\+Konto\+Med100() og Banken\+Test.\+Konto\+Test.\+Test\+Haev10kr\+P�\+Konto\+Med100().
+
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_konto_a8ed7fed7186a6df189eb108a5754bdaa}\label{class_i_g_m_b__103dap_1_1_konto_a8ed7fed7186a6df189eb108a5754bdaa}} 
+\index{IGMB\_103dap.Konto@{IGMB\_103dap.Konto}!Indsaet@{Indsaet}}
+\index{Indsaet@{Indsaet}!IGMB\_103dap.Konto@{IGMB\_103dap.Konto}}
+\doxysubsubsection{\texorpdfstring{Indsaet()}{Indsaet()}}
+{\footnotesize\ttfamily void I\+G\+M\+B\+\_\+103dap.\+Konto.\+Indsaet (\begin{DoxyParamCaption}\item[{double}]{beloeb }\end{DoxyParamCaption})}
+
+
+
+Indsaetter et beløb og opdaterer Saldo tilsvarende. Bør kun kunne indsætte postive beløb, større end nul. 
+
+
+\begin{DoxyParams}{Parametre}
+{\em beløb} & Postivt tal, større end nul\\
+\hline
+\end{DoxyParams}
+
+
+Defineret på linje 36 i filen Konto.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{24         \{}
-\DoxyCodeLine{25             this.\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}{saldo}} += beløb;}
-\DoxyCodeLine{26         \}}
+\DoxyCodeLine{37         \{}
+\DoxyCodeLine{38             \textcolor{keywordflow}{if} (beloeb <= 0)}
+\DoxyCodeLine{39             \{}
+\DoxyCodeLine{40                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentException(\textcolor{stringliteral}{"{}Beløb må ikke være 0 eller mindre"{}}, \textcolor{stringliteral}{"{}beløb"{}});}
+\DoxyCodeLine{41             \}}
+\DoxyCodeLine{42             this.\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a52fc5606d26ce8360ac03fe72af59092}{Saldo}} += beloeb;}
+\DoxyCodeLine{43         \}}
 
 \end{DoxyCode}
 
 
-Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Konto.\+saldo.
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Konto.\+Saldo.
+
+
+
+Refereret til af Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Indsaet0kr(), Banken\+Test.\+Konto\+Test.\+Test\+Indsaet0kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Indsaet100kr(), Banken\+Test.\+Konto\+Test.\+Test\+Indsaet100kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Indsaet\+Mega\+Mange\+Kr(), Banken\+Test.\+Konto\+Test.\+Test\+Indsaet\+Mega\+Mange\+Kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Indsaet\+Mega\+Mange\+Kr\+P�\+Konto\+Med1kr(), Banken\+Test.\+Konto\+Test.\+Test\+Indsaet\+Mega\+Mange\+Kr\+P�\+Konto\+Med1kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Indsaet\+Minus100kr() og Banken\+Test.\+Konto\+Test.\+Test\+Indsaet\+Minus100kr().
 
 
 
 \doxysubsection{Egenskabsdokumentation}
-\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}\label{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}} 
-\index{IGMB\_103dap.Konto@{IGMB\_103dap.Konto}!saldo@{saldo}}
-\index{saldo@{saldo}!IGMB\_103dap.Konto@{IGMB\_103dap.Konto}}
-\doxysubsubsection{\texorpdfstring{saldo}{saldo}}
-{\footnotesize\ttfamily double I\+G\+M\+B\+\_\+103dap.\+Konto.\+saldo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_konto_a52fc5606d26ce8360ac03fe72af59092}\label{class_i_g_m_b__103dap_1_1_konto_a52fc5606d26ce8360ac03fe72af59092}} 
+\index{IGMB\_103dap.Konto@{IGMB\_103dap.Konto}!Saldo@{Saldo}}
+\index{Saldo@{Saldo}!IGMB\_103dap.Konto@{IGMB\_103dap.Konto}}
+\doxysubsubsection{\texorpdfstring{Saldo}{Saldo}}
+{\footnotesize\ttfamily double I\+G\+M\+B\+\_\+103dap.\+Konto.\+Saldo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
 
 
 
-Defineret på linje 20 i filen Konto.\+cs.
+En egenskab der indeholder den aktuelle Saldo. Dvs. havd der til enhvertid står på kontoen. 
+
+
+
+Defineret på linje 26 i filen Konto.\+cs.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{20 \{ \textcolor{keyword}{get}; \textcolor{keyword}{protected} \textcolor{keyword}{set}; \}}
+\DoxyCodeLine{26 \{ \textcolor{keyword}{get}; \textcolor{keyword}{protected} \textcolor{keyword}{set}; \}}
 
 \end{DoxyCode}
 
 
-Refereret til af I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit.\+Hæv(), I\+G\+M\+B\+\_\+103dap.\+Konto.\+Hæv(), I\+G\+M\+B\+\_\+103dap.\+Konto.\+Indsæt(), I\+G\+M\+B\+\_\+103dap.\+Konto.\+Konto(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Construct\+Med0kr(), Banken\+Test.\+Konto\+Test.\+Test\+Construct\+Med0kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Construct\+Med100kr(), Banken\+Test.\+Konto\+Test.\+Test\+Construct\+Med100kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+H�v100kr\+P�\+Konto\+Med0(), Banken\+Test.\+Konto\+Test.\+Test\+H�v100kr\+P�\+Konto\+Med0(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+H�v100kr\+P�\+Konto\+Med100(), Banken\+Test.\+Konto\+Test.\+Test\+H�v100kr\+P�\+Konto\+Med100(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+H�v10kr\+P�\+Konto\+Med100(), Banken\+Test.\+Konto\+Test.\+Test\+H�v10kr\+P�\+Konto\+Med100(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+H�v\+Over\+Kasse\+Kredit\+Med0(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+H�v\+Over\+Kasse\+Kredit\+Med100(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Inds�t0kr(), Banken\+Test.\+Konto\+Test.\+Test\+Inds�t0kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Inds�t100kr(), Banken\+Test.\+Konto\+Test.\+Test\+Inds�t100kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Inds�t\+Mega\+Mange\+Kr(), Banken\+Test.\+Konto\+Test.\+Test\+Inds�t\+Mega\+Mange\+Kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Inds�t\+Minus100kr() og Banken\+Test.\+Konto\+Test.\+Test\+Inds�t\+Minus100kr().
+Refereret til af I\+G\+M\+B\+\_\+103dap.\+Renteopsparingskonto.\+Forrentning(), X\+Unit\+Test\+Project1.\+Renteopsparingskonto\+Test.\+ForrentningÆndrer\+Ikke\+Saldo(), I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit.\+Haev(), I\+G\+M\+B\+\_\+103dap.\+Konto.\+Haev(), I\+G\+M\+B\+\_\+103dap.\+Konto.\+Indsaet(), I\+G\+M\+B\+\_\+103dap.\+Konto.\+Konto(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Construct\+Med0kr(), Banken\+Test.\+Konto\+Test.\+Test\+Construct\+Med0kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Construct\+Med100kr(), Banken\+Test.\+Konto\+Test.\+Test\+Construct\+Med100kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Haev100kr\+P�\+Konto\+Med0(), Banken\+Test.\+Konto\+Test.\+Test\+Haev100kr\+P�\+Konto\+Med0(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Haev100kr\+P�\+Konto\+Med100(), Banken\+Test.\+Konto\+Test.\+Test\+Haev100kr\+P�\+Konto\+Med100(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Haev10kr\+P�\+Konto\+Med100(), Banken\+Test.\+Konto\+Test.\+Test\+Haev10kr\+P�\+Konto\+Med100(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Haev\+Over\+Kasse\+Kredit\+Med0(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Haev\+Over\+Kasse\+Kredit\+Med100(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Indsaet0kr(), Banken\+Test.\+Konto\+Test.\+Test\+Indsaet0kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Indsaet100kr(), Banken\+Test.\+Konto\+Test.\+Test\+Indsaet100kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Indsaet\+Mega\+Mange\+Kr(), Banken\+Test.\+Konto\+Test.\+Test\+Indsaet\+Mega\+Mange\+Kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Indsaet\+Minus100kr() og Banken\+Test.\+Konto\+Test.\+Test\+Indsaet\+Minus100kr().
 
 
 

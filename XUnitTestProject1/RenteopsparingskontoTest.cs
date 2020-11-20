@@ -26,10 +26,10 @@ namespace XUnitTestProject1
         [Fact]
         public void ForrentningÆndrerIkkeSaldo()
         {
-            var gammelSaldo = konto.saldo;
+            var gammelSaldo = konto.Saldo;
             konto.Forrentning();
 
-            Assert.Equal(gammelSaldo, konto.saldo);
+            Assert.Equal(gammelSaldo, konto.Saldo);
         }
     }
 }

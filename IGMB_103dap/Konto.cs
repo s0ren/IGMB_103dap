@@ -17,19 +17,19 @@ namespace IGMB_103dap
             Saldo = startSaldo;
         }
 
-        // Laan branch: Ændret property navn fra saldo til Saldo.
+        // Laan branch: Ændret property navn fra Saldo til Saldo.
       
         /// <summary>
-        /// En egenskab der indeholder den aktuelle saldo.
+        /// En egenskab der indeholder den aktuelle Saldo.
         /// Dvs. havd der til enhvertid står på kontoen.
         /// </summary>
         public double Saldo { get; protected set; }
 
-        // Laan branch: Ændret metode navn fra Indsæt til Indsaet
+        // Laan branch: Ændret metode navn fra Indsaet til Indsaet
         // og parameter fra beløb til beloeb.
       
         /// <summary>
-        /// Indsætter et beløb og opdaterer saldo tilsvarende.
+        /// Indsaetter et beløb og opdaterer Saldo tilsvarende.
         /// Bør kun kunne indsætte postive beløb, større end nul.
         /// </summary>
         /// <param name="beløb">Postivt tal, større end nul</param>
@@ -42,11 +42,11 @@ namespace IGMB_103dap
             this.Saldo += beloeb;
         }
 
-        // Laan branch: Ændret metode nav fra Hæv til Haev
+        // Laan branch: Ændret metode nav fra Haev til Haev
         // og parameter fra beløb til beloeb.
       
         /// <summary>
-        /// Hæver et et beløb, og opdaterer saldo
+        /// Haever et et beløb, og opdaterer Saldo
         /// kan kun hæve positive beløb, større end nul
         /// </summary>
         /// <param name="beløb">positivt tal større end 0</param>

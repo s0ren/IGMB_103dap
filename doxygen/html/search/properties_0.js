@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kassekredit_81',['kasseKredit',['../class_i_g_m_b__103dap_1_1_kasse_kredit.html#adcad47ec3ebe5bd6c0b8eb85ea04b7e2',1,'IGMB_103dap::KasseKredit']]]
+  ['gaeld_107',['Gaeld',['../class_i_g_m_b__103dap_1_1_laan.html#a8d82fd1eca578dd5521f9af9157d60fa',1,'IGMB_103dap::Laan']]]
 ];

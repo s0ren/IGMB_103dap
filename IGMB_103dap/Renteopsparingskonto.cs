@@ -14,12 +14,12 @@ namespace IGMB_103dap
             Rentesats = rentesats;
         }
         /// <summary>
-        /// Beregner ny saldo efter en forrentning
+        /// Beregner ny Saldo efter en forrentning
         /// </summary>
-        /// <returns>Ny saldo</returns>
+        /// <returns>Ny Saldo</returns>
         public double Forrentning()
         {
-            var nySaldo = saldo * (1 + Rentesats / 100);
+            var nySaldo = Saldo * (1 + Rentesats / 100);
             return nySaldo;
         }
     }
