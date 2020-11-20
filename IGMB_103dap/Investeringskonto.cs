@@ -4,11 +4,17 @@ using System.Text;
 
 namespace IGMB_103dap
 {
-    class Investeringskonto : Konto
+    public class Investeringskonto : Konto
     {
-        public Investeringskonto(double startsaldo)
+        public double Rente { get; set; }
+        public Investeringskonto(double startSaldo, double renteSats) : base(startSaldo)
         {
+            double rente = renteSats;
+        }
 
+        public void beregnRente(double startSaldo, double renteSats)
+        {
+            double investeringsRente = startSaldo * renteSats;
         }
     }
 }
