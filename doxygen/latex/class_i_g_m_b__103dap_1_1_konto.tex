@@ -1,0 +1,141 @@
+\hypertarget{class_i_g_m_b__103dap_1_1_konto}{}\doxysection{I\+G\+M\+B\+\_\+103dap.\+Konto Klasse-\/reference}
+\label{class_i_g_m_b__103dap_1_1_konto}\index{IGMB\_103dap.Konto@{IGMB\_103dap.Konto}}
+Stamtræ for I\+G\+M\+B\+\_\+103dap.\+Konto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_g_m_b__103dap_1_1_konto}
+\end{center}
+\end{figure}
+\doxysubsection*{Offentlige metoder}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a88d6a9df787bb0ef599f892e31e03c4d}{Konto}} (double start\+Saldo)
+\begin{DoxyCompactList}\small\item\em Laver en \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto}{Konto}} med et beløb indsat \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a5545f0ea1dcb8782053029a9f46084d2}{Indsæt}} (double beløb)
+\item 
+virtual void \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a27e1cbda2c63794023c7d553e4602429}{Hæv}} (double beløb)
+\end{DoxyCompactItemize}
+\doxysubsection*{Egenskaber}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}{saldo}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detaljeret beskrivelse}
+
+
+Defineret på linje 9 i filen Konto.\+cs.
+
+
+
+\doxysubsection{Dokumentation af konstruktører og destruktører}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_konto_a88d6a9df787bb0ef599f892e31e03c4d}\label{class_i_g_m_b__103dap_1_1_konto_a88d6a9df787bb0ef599f892e31e03c4d}} 
+\index{IGMB\_103dap.Konto@{IGMB\_103dap.Konto}!Konto@{Konto}}
+\index{Konto@{Konto}!IGMB\_103dap.Konto@{IGMB\_103dap.Konto}}
+\doxysubsubsection{\texorpdfstring{Konto()}{Konto()}}
+{\footnotesize\ttfamily I\+G\+M\+B\+\_\+103dap.\+Konto.\+Konto (\begin{DoxyParamCaption}\item[{double}]{start\+Saldo }\end{DoxyParamCaption})}
+
+
+
+Laver en \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto}{Konto}} med et beløb indsat 
+
+
+\begin{DoxyParams}{Parametre}
+{\em start\+Saldo} & Det beløb der indsættes ved oprettelse\\
+\hline
+\end{DoxyParams}
+
+
+Defineret på linje 15 i filen Konto.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16         \{}
+\DoxyCodeLine{17             \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}{saldo}} = startSaldo;}
+\DoxyCodeLine{18         \}}
+
+\end{DoxyCode}
+
+
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Konto.\+saldo.
+
+
+
+\doxysubsection{Dokumentation af medlemsfunktioner}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_konto_a27e1cbda2c63794023c7d553e4602429}\label{class_i_g_m_b__103dap_1_1_konto_a27e1cbda2c63794023c7d553e4602429}} 
+\index{IGMB\_103dap.Konto@{IGMB\_103dap.Konto}!Hæv@{Hæv}}
+\index{Hæv@{Hæv}!IGMB\_103dap.Konto@{IGMB\_103dap.Konto}}
+\doxysubsubsection{\texorpdfstring{Hæv()}{Hæv()}}
+{\footnotesize\ttfamily virtual void I\+G\+M\+B\+\_\+103dap.\+Konto.\+Hæv (\begin{DoxyParamCaption}\item[{double}]{beløb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplementeret i \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_kasse_kredit_a096f0e287c6878edc168cd1be09b8a79}{I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit}}.
+
+
+
+Defineret på linje 28 i filen Konto.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29         \{}
+\DoxyCodeLine{30             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}{saldo}} >= beløb)}
+\DoxyCodeLine{31             \{}
+\DoxyCodeLine{32                 \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}{saldo}} -\/= beløb;}
+\DoxyCodeLine{33             \}}
+\DoxyCodeLine{34         \}}
+
+\end{DoxyCode}
+
+
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Konto.\+saldo.
+
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_konto_a5545f0ea1dcb8782053029a9f46084d2}\label{class_i_g_m_b__103dap_1_1_konto_a5545f0ea1dcb8782053029a9f46084d2}} 
+\index{IGMB\_103dap.Konto@{IGMB\_103dap.Konto}!Indsæt@{Indsæt}}
+\index{Indsæt@{Indsæt}!IGMB\_103dap.Konto@{IGMB\_103dap.Konto}}
+\doxysubsubsection{\texorpdfstring{Indsæt()}{Indsæt()}}
+{\footnotesize\ttfamily void I\+G\+M\+B\+\_\+103dap.\+Konto.\+Indsæt (\begin{DoxyParamCaption}\item[{double}]{beløb }\end{DoxyParamCaption})}
+
+
+
+Defineret på linje 23 i filen Konto.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24         \{}
+\DoxyCodeLine{25             this.\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}{saldo}} += beløb;}
+\DoxyCodeLine{26         \}}
+
+\end{DoxyCode}
+
+
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Konto.\+saldo.
+
+
+
+\doxysubsection{Egenskabsdokumentation}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}\label{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}} 
+\index{IGMB\_103dap.Konto@{IGMB\_103dap.Konto}!saldo@{saldo}}
+\index{saldo@{saldo}!IGMB\_103dap.Konto@{IGMB\_103dap.Konto}}
+\doxysubsubsection{\texorpdfstring{saldo}{saldo}}
+{\footnotesize\ttfamily double I\+G\+M\+B\+\_\+103dap.\+Konto.\+saldo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Defineret på linje 20 i filen Konto.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20 \{ \textcolor{keyword}{get}; \textcolor{keyword}{protected} \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+Refereret til af I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit.\+Hæv(), I\+G\+M\+B\+\_\+103dap.\+Konto.\+Hæv(), I\+G\+M\+B\+\_\+103dap.\+Konto.\+Indsæt(), I\+G\+M\+B\+\_\+103dap.\+Konto.\+Konto(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Construct\+Med0kr(), Banken\+Test.\+Konto\+Test.\+Test\+Construct\+Med0kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Construct\+Med100kr(), Banken\+Test.\+Konto\+Test.\+Test\+Construct\+Med100kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+H�v100kr\+P�\+Konto\+Med0(), Banken\+Test.\+Konto\+Test.\+Test\+H�v100kr\+P�\+Konto\+Med0(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+H�v100kr\+P�\+Konto\+Med100(), Banken\+Test.\+Konto\+Test.\+Test\+H�v100kr\+P�\+Konto\+Med100(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+H�v10kr\+P�\+Konto\+Med100(), Banken\+Test.\+Konto\+Test.\+Test\+H�v10kr\+P�\+Konto\+Med100(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+H�v\+Over\+Kasse\+Kredit\+Med0(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+H�v\+Over\+Kasse\+Kredit\+Med100(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Inds�t0kr(), Banken\+Test.\+Konto\+Test.\+Test\+Inds�t0kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Inds�t100kr(), Banken\+Test.\+Konto\+Test.\+Test\+Inds�t100kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Inds�t\+Mega\+Mange\+Kr(), Banken\+Test.\+Konto\+Test.\+Test\+Inds�t\+Mega\+Mange\+Kr(), Banken\+Test.\+Kasse\+Kredit\+Test.\+Test\+Inds�t\+Minus100kr() og Banken\+Test.\+Konto\+Test.\+Test\+Inds�t\+Minus100kr().
+
+
+
+Dokumentationen for denne klasse blev genereret ud fra filen\+:\begin{DoxyCompactItemize}
+\item 
+I\+G\+M\+B\+\_\+103dap/\mbox{\hyperlink{_konto_8cs}{Konto.\+cs}}\end{DoxyCompactItemize}
