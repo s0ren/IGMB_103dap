@@ -9,7 +9,7 @@ namespace IGMB_103dap
     public class Konto
     {
         /// <summary>
-        /// Laver en Konto med et beløb indsat
+        /// Laver en Konto med et beløb indsat på brugerens konto
         /// </summary>
         /// <param name="startSaldo">Det beløb der indsættes ved oprettelse</param>
         public Konto(double startSaldo)
