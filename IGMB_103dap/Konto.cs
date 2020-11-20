@@ -14,21 +14,26 @@ namespace IGMB_103dap
         /// <param name="startSaldo">Det beløb der indsættes ved oprettelse</param>
         public Konto(double startSaldo)
         {
-            saldo = startSaldo;
+            Saldo = startSaldo;
         }
 
-        public double saldo { get; private set; }
+        // Laan branch: Ændret property navn fra saldo til Saldo.
+        public double Saldo { get; private set; }
 
-        public void Indsæt(double beløb)
+        // Laan branch: Ændret metode navn fra Indsæt til Indsaet
+        // og parameter fra beløb til beloeb.
+        public void Indsaet(double beloeb)
         {
-            this.saldo += beløb;
+            this.Saldo += beloeb;
         }
 
-        public void Hæv(double beløb)
+        // Laan branch: Ændret metode nav fra Hæv til Haev
+        // og parameter fra beløb til beloeb.
+        public virtual void Haev(double beloeb)
         {
-            if (saldo >= beløb)
+            if (Saldo >= beloeb)
             {
-                saldo -= beløb;
+                Saldo -= beloeb;
             }
         }
 
