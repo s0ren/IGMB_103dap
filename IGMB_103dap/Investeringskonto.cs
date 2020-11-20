@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using IGMB_103dap;
 
 namespace IGMB_103dap
 {
@@ -10,7 +11,7 @@ namespace IGMB_103dap
         /// Er den fastsatte rentesats for investeringskontoen
         /// </summary>
         /// <param name="Rente">Den rentesats der indsættes i beregnRente metoden til beregning af renten af kontoens indhold</param>
-        public double Rente { get; set; }
+        private double Rente { get; set; }
         public Investeringskonto(double startSaldo, double renteSats) : base(startSaldo)
         {
             Rente = renteSats;
@@ -20,9 +21,9 @@ namespace IGMB_103dap
         /// </summary>
         /// <param name="startSaldo">Dette er vores saldo på kontoen som helst skal være positivt beløb</param>
         /// <param name="renteSats">Rentesatsen som bruges til i investeringskontoen (fks.) -0.01</param>
-        public void beregnRente(double startSaldo, double renteSats)
+        public double BeregnRente()
         {
-            double investeringsRente = startSaldo * renteSats;
+            return this.saldo * this.Rente;
         }
     }
 }
