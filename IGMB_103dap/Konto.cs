@@ -21,6 +21,10 @@ namespace IGMB_103dap
 
         public void Indsæt(double beløb)
         {
+            if (beløb <= 0)
+            {
+                throw new System.ArgumentException("Beløb må ikke være 0 eller mindre", "beløb");
+            }
             this.saldo += beløb;
         }
 
