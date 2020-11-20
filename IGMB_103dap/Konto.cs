@@ -42,11 +42,11 @@ namespace IGMB_103dap
             this.Saldo += beloeb;
         }
 
-        // Laan branch: Ændret metode nav fra Haev til Haev
+        // Laan branch: Ændret metode nav fra Hæv til Haev
         // og parameter fra beløb til beloeb.
       
         /// <summary>
-        /// Haever et et beløb, og opdaterer Saldo
+        /// Haever et beløb, og opdaterer Saldo
         /// kan kun hæve positive beløb, større end nul
         /// </summary>
         /// <param name="beløb">positivt tal større end 0</param>
