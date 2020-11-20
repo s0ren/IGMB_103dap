@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank
+namespace IGMB_103dap
 {
     public class KasseKredit : Konto
     {
@@ -12,8 +12,8 @@ namespace Bank
 
         public KasseKredit(double startSaldo, double kasseKreditStart) : base(startSaldo)
         {
-            base.SætSaldo(startSaldo);
-            this.kasseKredit = 0 - kasseKreditStart;
+
+            kasseKredit = 0 - kasseKreditStart;
         }
 
         public override void Hæv(double beløb)
@@ -23,7 +23,7 @@ namespace Bank
                 return;
             }
 
-            SætSaldo(saldo - beløb);
+            saldo -= beløb;
         }
     }
 }

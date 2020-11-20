@@ -1,8 +1,8 @@
 using System;
 using Xunit;
-using Bank;
+using IGMB_103dap;
 
-namespace BankTest
+namespace BankenTest
 {
     public class KasseKreditTest : IDisposable
     {
@@ -97,6 +97,22 @@ namespace BankTest
             k = new KasseKredit(100, _kasseKredit);
             k.Hæv(100);
             Assert.Equal(0, k.saldo);
+        }
+
+        [Fact]
+        public void TestHævOverKasseKreditMed0()
+        {
+            //k = new KasseKredit(0, _kasseKredit);
+            k.Hæv(5200);
+            Assert.NotEqual(-5200, k.saldo);
+        }
+
+        [Fact]
+        public void TestHævOverKasseKreditMed100()
+        {
+            k = new KasseKredit(100, _kasseKredit);
+            k.Hæv(5100);
+            Assert.Equal(-5000, k.saldo);
         }
     }
 }

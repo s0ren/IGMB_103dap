@@ -17,14 +17,15 @@ namespace IGMB_103dap
             saldo = startSaldo;
         }
 
-        public double saldo { get; private set; }
+        public double saldo { get; protected set; }
+
 
         public void Indsæt(double beløb)
         {
             this.saldo += beløb;
         }
 
-        public void Hæv(double beløb)
+        public virtual void Hæv(double beløb)
         {
             if (saldo >= beløb)
             {

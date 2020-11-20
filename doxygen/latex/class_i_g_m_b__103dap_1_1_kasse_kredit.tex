@@ -1,0 +1,113 @@
+\hypertarget{class_i_g_m_b__103dap_1_1_kasse_kredit}{}\doxysection{I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit Klasse-\/reference}
+\label{class_i_g_m_b__103dap_1_1_kasse_kredit}\index{IGMB\_103dap.KasseKredit@{IGMB\_103dap.KasseKredit}}
+Stamtræ for I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_g_m_b__103dap_1_1_kasse_kredit}
+\end{center}
+\end{figure}
+\doxysubsection*{Offentlige metoder}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_i_g_m_b__103dap_1_1_kasse_kredit_a1c7330b580d238b82ec27b678d74ee04}{Kasse\+Kredit}} (double start\+Saldo, double kasse\+Kredit\+Start)
+\item 
+override void \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_kasse_kredit_a096f0e287c6878edc168cd1be09b8a79}{Hæv}} (double beløb)
+\end{DoxyCompactItemize}
+\doxysubsection*{Egenskaber}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_kasse_kredit_adcad47ec3ebe5bd6c0b8eb85ea04b7e2}{kasse\+Kredit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detaljeret beskrivelse}
+
+
+Defineret på linje 9 i filen Kasse\+Kredit.\+cs.
+
+
+
+\doxysubsection{Dokumentation af konstruktører og destruktører}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_kasse_kredit_a1c7330b580d238b82ec27b678d74ee04}\label{class_i_g_m_b__103dap_1_1_kasse_kredit_a1c7330b580d238b82ec27b678d74ee04}} 
+\index{IGMB\_103dap.KasseKredit@{IGMB\_103dap.KasseKredit}!KasseKredit@{KasseKredit}}
+\index{KasseKredit@{KasseKredit}!IGMB\_103dap.KasseKredit@{IGMB\_103dap.KasseKredit}}
+\doxysubsubsection{\texorpdfstring{KasseKredit()}{KasseKredit()}}
+{\footnotesize\ttfamily I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit.\+Kasse\+Kredit (\begin{DoxyParamCaption}\item[{double}]{start\+Saldo,  }\item[{double}]{kasse\+Kredit\+Start }\end{DoxyParamCaption})}
+
+
+
+Defineret på linje 13 i filen Kasse\+Kredit.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13                                                                        : base(startSaldo)}
+\DoxyCodeLine{14         \{}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16             \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_kasse_kredit_adcad47ec3ebe5bd6c0b8eb85ea04b7e2}{kasseKredit}} = 0 -\/ kasseKreditStart;}
+\DoxyCodeLine{17         \}}
+
+\end{DoxyCode}
+
+
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit.\+kasse\+Kredit.
+
+
+
+\doxysubsection{Dokumentation af medlemsfunktioner}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_kasse_kredit_a096f0e287c6878edc168cd1be09b8a79}\label{class_i_g_m_b__103dap_1_1_kasse_kredit_a096f0e287c6878edc168cd1be09b8a79}} 
+\index{IGMB\_103dap.KasseKredit@{IGMB\_103dap.KasseKredit}!Hæv@{Hæv}}
+\index{Hæv@{Hæv}!IGMB\_103dap.KasseKredit@{IGMB\_103dap.KasseKredit}}
+\doxysubsubsection{\texorpdfstring{Hæv()}{Hæv()}}
+{\footnotesize\ttfamily override void I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit.\+Hæv (\begin{DoxyParamCaption}\item[{double}]{beløb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Overskriver metode fra \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a27e1cbda2c63794023c7d553e4602429}{I\+G\+M\+B\+\_\+103dap.\+Konto}}.
+
+
+
+Defineret på linje 19 i filen Kasse\+Kredit.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20         \{}
+\DoxyCodeLine{21             \textcolor{keywordflow}{if} (beløb < \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_kasse_kredit_adcad47ec3ebe5bd6c0b8eb85ea04b7e2}{kasseKredit}})}
+\DoxyCodeLine{22             \{}
+\DoxyCodeLine{23                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{24             \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26             \mbox{\hyperlink{class_i_g_m_b__103dap_1_1_konto_a19be4c4840730ee89b7300efd5307799}{saldo}} -\/= beløb;}
+\DoxyCodeLine{27         \}}
+
+\end{DoxyCode}
+
+
+Indeholder referencer til I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit.\+kasse\+Kredit og I\+G\+M\+B\+\_\+103dap.\+Konto.\+saldo.
+
+
+
+\doxysubsection{Egenskabsdokumentation}
+\mbox{\Hypertarget{class_i_g_m_b__103dap_1_1_kasse_kredit_adcad47ec3ebe5bd6c0b8eb85ea04b7e2}\label{class_i_g_m_b__103dap_1_1_kasse_kredit_adcad47ec3ebe5bd6c0b8eb85ea04b7e2}} 
+\index{IGMB\_103dap.KasseKredit@{IGMB\_103dap.KasseKredit}!kasseKredit@{kasseKredit}}
+\index{kasseKredit@{kasseKredit}!IGMB\_103dap.KasseKredit@{IGMB\_103dap.KasseKredit}}
+\doxysubsubsection{\texorpdfstring{kasseKredit}{kasseKredit}}
+{\footnotesize\ttfamily double I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit.\+kasse\+Kredit\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Defineret på linje 11 i filen Kasse\+Kredit.\+cs.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11 \{ \textcolor{keyword}{get}; \textcolor{keyword}{private} \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+Refereret til af I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit.\+Hæv() og I\+G\+M\+B\+\_\+103dap.\+Kasse\+Kredit.\+Kasse\+Kredit().
+
+
+
+Dokumentationen for denne klasse blev genereret ud fra filen\+:\begin{DoxyCompactItemize}
+\item 
+I\+G\+M\+B\+\_\+103dap/\mbox{\hyperlink{_kasse_kredit_8cs}{Kasse\+Kredit.\+cs}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dispose_4',['Dispose',['../class_bank_test_1_1_kasse_kredit_test.html#aa244b4cc73223014fc7b4ba1d573e862',1,'BankTest.KasseKreditTest.Dispose()'],['../class_banken_test_1_1_konto_test.html#afb2747137f9d5b5131247911425b84b8',1,'BankenTest.KontoTest.Dispose()']]]
+  ['dispose_2',['Dispose',['../class_banken_test_1_1_kasse_kredit_test.html#a9c85370d56be6b852f51ff68b934e042',1,'BankenTest.KasseKreditTest.Dispose()'],['../class_banken_test_1_1_konto_test.html#afb2747137f9d5b5131247911425b84b8',1,'BankenTest.KontoTest.Dispose()']]]
 ];

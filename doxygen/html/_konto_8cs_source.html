@@ -75,7 +75,7 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> System.Text;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> System.Threading.Tasks;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespace_i_g_m_b__103dap.html">    7</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_i_g_m_b__103dap.html">IGMB_103dap</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_i_g_m_b__103dap.html">IGMB_103dap</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_i_g_m_b__103dap_1_1_konto.html">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_i_g_m_b__103dap_1_1_konto.html">Konto</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
@@ -84,29 +84,30 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">saldo</a> = startSaldo;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">   20</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">saldo</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">   20</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">double</span> <a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">saldo</a> { <span class="keyword">get</span>; <span class="keyword">protected</span> <span class="keyword">set</span>; }</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_i_g_m_b__103dap_1_1_konto.html#a5545f0ea1dcb8782053029a9f46084d2">   22</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a5545f0ea1dcb8782053029a9f46084d2">Indsæt</a>(<span class="keywordtype">double</span> beløb)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            this.<a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">saldo</a> += beløb;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_i_g_m_b__103dap_1_1_konto.html#a76923ac8fd9e42253bb0dc9a6e388da5">   27</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a76923ac8fd9e42253bb0dc9a6e388da5">Hæv</a>(<span class="keywordtype">double</span> beløb)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">saldo</a> &gt;= beløb)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">saldo</a> -= beløb;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_i_g_m_b__103dap_1_1_konto.html#a5545f0ea1dcb8782053029a9f46084d2">   23</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a5545f0ea1dcb8782053029a9f46084d2">Indsæt</a>(<span class="keywordtype">double</span> beløb)</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            this.<a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">saldo</a> += beløb;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_i_g_m_b__103dap_1_1_konto.html#a27e1cbda2c63794023c7d553e4602429">   28</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a27e1cbda2c63794023c7d553e4602429">Hæv</a>(<span class="keywordtype">double</span> beløb)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">saldo</a> &gt;= beløb)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <a class="code" href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">saldo</a> -= beløb;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_i_g_m_b__103dap_1_1_konto_html_a76923ac8fd9e42253bb0dc9a6e388da5"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_konto.html#a76923ac8fd9e42253bb0dc9a6e388da5">IGMB_103dap.Konto.Hæv</a></div><div class="ttdeci">void Hæv(double beløb)</div><div class="ttdef"><b>Definition:</b> <a href="_konto_8cs_source.html#l00027">Konto.cs:27</a></div></div>
 <div class="ttc" id="aclass_i_g_m_b__103dap_1_1_konto_html_a88d6a9df787bb0ef599f892e31e03c4d"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_konto.html#a88d6a9df787bb0ef599f892e31e03c4d">IGMB_103dap.Konto.Konto</a></div><div class="ttdeci">Konto(double startSaldo)</div><div class="ttdoc">Laver en Konto med et beløb indsat</div><div class="ttdef"><b>Definition:</b> <a href="_konto_8cs_source.html#l00015">Konto.cs:15</a></div></div>
 <div class="ttc" id="aclass_i_g_m_b__103dap_1_1_konto_html"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_konto.html">IGMB_103dap.Konto</a></div><div class="ttdef"><b>Definition:</b> <a href="_konto_8cs_source.html#l00009">Konto.cs:10</a></div></div>
-<div class="ttc" id="anamespace_i_g_m_b__103dap_html"><div class="ttname"><a href="namespace_i_g_m_b__103dap.html">IGMB_103dap</a></div><div class="ttdef"><b>Definition:</b> <a href="_konto_8cs_source.html#l00007">Konto.cs:8</a></div></div>
-<div class="ttc" id="aclass_i_g_m_b__103dap_1_1_konto_html_a5545f0ea1dcb8782053029a9f46084d2"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_konto.html#a5545f0ea1dcb8782053029a9f46084d2">IGMB_103dap.Konto.Indsæt</a></div><div class="ttdeci">void Indsæt(double beløb)</div><div class="ttdef"><b>Definition:</b> <a href="_konto_8cs_source.html#l00022">Konto.cs:22</a></div></div>
+<div class="ttc" id="anamespace_i_g_m_b__103dap_html"><div class="ttname"><a href="namespace_i_g_m_b__103dap.html">IGMB_103dap</a></div><div class="ttdef"><b>Definition:</b> <a href="_kasse_kredit_8cs_source.html#l00007">KasseKredit.cs:8</a></div></div>
+<div class="ttc" id="aclass_i_g_m_b__103dap_1_1_konto_html_a27e1cbda2c63794023c7d553e4602429"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_konto.html#a27e1cbda2c63794023c7d553e4602429">IGMB_103dap.Konto.Hæv</a></div><div class="ttdeci">virtual void Hæv(double beløb)</div><div class="ttdef"><b>Definition:</b> <a href="_konto_8cs_source.html#l00028">Konto.cs:28</a></div></div>
+<div class="ttc" id="aclass_i_g_m_b__103dap_1_1_konto_html_a5545f0ea1dcb8782053029a9f46084d2"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_konto.html#a5545f0ea1dcb8782053029a9f46084d2">IGMB_103dap.Konto.Indsæt</a></div><div class="ttdeci">void Indsæt(double beløb)</div><div class="ttdef"><b>Definition:</b> <a href="_konto_8cs_source.html#l00023">Konto.cs:23</a></div></div>
 <div class="ttc" id="aclass_i_g_m_b__103dap_1_1_konto_html_a19be4c4840730ee89b7300efd5307799"><div class="ttname"><a href="class_i_g_m_b__103dap_1_1_konto.html#a19be4c4840730ee89b7300efd5307799">IGMB_103dap.Konto.saldo</a></div><div class="ttdeci">double saldo</div><div class="ttdef"><b>Definition:</b> <a href="_konto_8cs_source.html#l00020">Konto.cs:20</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
