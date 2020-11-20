@@ -30,6 +30,10 @@ namespace IGMB_103dap
         /// <param name="beløb">Postivt tal, større end nul</param>
         public void Indsæt(double beløb)
         {
+            if (beløb <= 0)
+            {
+                throw new System.ArgumentException("Beløb må ikke være 0 eller mindre", "beløb");
+            }
             this.saldo += beløb;
         }
 
